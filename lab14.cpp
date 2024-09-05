@@ -19,9 +19,12 @@ void push(stackinfo *S,int data){
   S->data[S->top]=data;  S->top++;   
  }
 }
-
+int peek(stackinfo *S){
+     if(S->top==0){cout<<"Empty"<<endl;}else{return S->data[S->top-1];}
+}
 int main(){
      stackinfo *S1=createStack(10);
      push(S1,100); push(S1,200);push(S1,300);
+     cout << peek(S1) << endl;
     return 0;
 }
