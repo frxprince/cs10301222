@@ -14,9 +14,14 @@ stackinfo *createStack(int maxElements)
    S->stacksize=maxElements;
    return S;
 }
-
+void push(stackinfo *S,int data){
+ if(S->top == S->stacksize){ cout << "Stack overflow"<<endl;}else{
+  S->data[S->top]=data;  S->top++;   
+ }
+}
 
 int main(){
      stackinfo *S1=createStack(10);
+     push(S1,100); push(S1,200);push(S1,300);
     return 0;
 }
