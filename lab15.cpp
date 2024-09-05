@@ -3,11 +3,11 @@
 using namespace std;
 int main()
 {
- stack<int> S1;
-   S1.push(100);
-   S1.push(200);
-   S1.push(300);
-   S1.push(123);
+ stack<string> S1;
+   S1.push("hello");
+   S1.push("world");
+   S1.push("cs");
+   S1.push(",mju");
   /* cout<<S1.top()<<endl;
    S1.pop();
    cout<<S1.top()<<endl;  */
