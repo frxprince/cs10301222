@@ -22,9 +22,20 @@ void push(stackinfo *S,int data){
 int peek(stackinfo *S){
      if(S->top==0){cout<<"Empty"<<endl;}else{return S->data[S->top-1];}
 }
+
+int pop(stackinfo *S){
+    int data;
+    if(S->top == 0){
+        cout <<" empty " <<endl; return -1;
+    }else{
+        data=peek(S); S->top--;
+    }
+    return data;
+}
 int main(){
      stackinfo *S1=createStack(10);
      push(S1,100); push(S1,200);push(S1,300);
      cout << peek(S1) << endl;
+     cout<<pop(S1) <<","<<pop(S1) <<"  " << pop(S1)<<endl;
     return 0;
 }
