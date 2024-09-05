@@ -33,9 +33,10 @@ int pop(stackinfo *S){
     return data;
 }
 int main(){
-     stackinfo *S1=createStack(10);
+     stackinfo *S1=createStack(10);      stackinfo *S2=createStack(5);
      push(S1,100); push(S1,200);push(S1,300);
      cout << peek(S1) << endl;
      cout<<pop(S1) <<","<<pop(S1) <<"  " << pop(S1)<<endl;
+     push(S2,123); cout<< pop(S2) <<endl;
     return 0;
 }
