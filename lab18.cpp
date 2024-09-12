@@ -2,6 +2,7 @@
 #include<stack>
 #include<queue>
 #include<cstring>
+#include<string>
 #include<cmath>
 using namespace std;
 stack<string>S;
@@ -17,14 +18,12 @@ void printQ(queue<string>Q){
 }
 
 
-
-
 int main()
 {
     Precedent['^']=3;
     Precedent['*']=2;     Precedent['/']=2;
     Precedent['+']=1;     Precedent['-']=1;
-   string input="1+2+3*40+5*6";
+   string input="1+2+3*4+5*6";
    string token,token_op;
    unsigned int i;
    for(i=0;i<input.length();i++){
@@ -63,6 +62,24 @@ int main()
    }
 
 cout<<"input:"<<input<<endl;  cout<<"Postfix: "<<endl; printQ(Q);
-
+//--------- EVALuation
+float a,b,c;
+while(!Q.empty()){
+if((Q.front()[0]=='+') || (Q.front()[0]=='-') ||(Q.front()[0]=='*') ||(Q.front()[0]=='/') ||(Q.front()[0]=='^')){
+    b= atof( S.top().c_str()); S.pop();
+    a= atof(S.top().c_str()); S.pop();
+    if(Q.front()[0]=='+')c=a+b;
+    if(Q.front()[0]=='-')c=a-b;
+    if(Q.front()[0]=='*')c=a*b;
+    if(Q.front()[0]=='/')c=a/b;
+    if(Q.front()[0]=='^')c=pow(a,b);
+    S.push(to_string(c));
+}else{
+    S.push(Q.front());
+}
+  Q.pop();
+}
+cout<<" Evaluation result:"<<S.top()<<endl;
+S.pop();
     return 0;
 }
