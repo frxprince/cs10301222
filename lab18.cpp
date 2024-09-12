@@ -8,6 +8,17 @@ stack<string>S;
 queue<string>Q;
 char Precedent[256];
 
+void printQ(queue<string>Q){
+    queue<string>q=Q;
+    while(!q.empty()){
+        cout<<q.front()<<"  ";
+        q.pop();
+    }cout<<endl;
+}
+
+
+
+
 int main()
 {
     Precedent['^']=3;
@@ -39,11 +50,7 @@ int main()
                 Q.push(S.top());S.pop();
                  if(S.empty())break;
             } S.push(token_op);
-            }
-
-     //   cout<<input[i]<<" operator"<<endl;
-     //   cout<<token<<" operand "<<endl;
-       
+            } 
      }
         token="";
    }else{
@@ -54,5 +61,8 @@ int main()
    while(!S.empty()){
     Q.push(S.top());S.pop();
    }
+
+cout<<"input:"<<input<<endl;  cout<<"Postfix: "<<endl; printQ(Q);
+
     return 0;
 }
