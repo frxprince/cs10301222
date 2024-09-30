@@ -35,9 +35,27 @@ void inord(){
     }
 }
 
+void post(){
+    stack<int>S1,S2;
+    int p=0;
+    S1.push(0);
+    while(!S1.empty()){
+        p=S1.top();S1.pop();
+        S2.push(p);
+        if(Left[p]!=-1)S1.push(Left[p]);
+        if(Right[p]!=-1)S1.push(Right[p]);
+    }
+    while(!S2.empty()){
+        p=S2.top();S2.pop();
+        cout<< Data[p]<< ", ";
+    }
+}
+
+
 int main()
 {
     cout << "Preorder ";preorder();
      cout <<endl<< "Inorder ";inord();
-    return 0;
+     cout <<endl<< "Postorder ";post();
+     return 0;
 }
