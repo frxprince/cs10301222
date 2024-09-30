@@ -20,15 +20,24 @@ void preorder(){
     }else{break;
     }
     }
-
 }
 
-
-
-
+void inord(){
+    int p=0;
+    while((p!=-1) || (S.empty()==0)){
+        while(p!=-1){
+            S.push(p);
+            p=Left[p];
+        }
+        p=S.top();S.pop();
+        cout<<Data[p]<<" , ";
+        p=Right[p];
+    }
+}
 
 int main()
 {
     cout << "Preorder ";preorder();
+     cout <<endl<< "Inorder ";inord();
     return 0;
 }
