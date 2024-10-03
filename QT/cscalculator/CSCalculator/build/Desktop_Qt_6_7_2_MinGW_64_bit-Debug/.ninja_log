@@ -1,0 +1,15 @@
+# ninja log v6
+25	248	7496283114597335	CSCalculator_autogen/timestamp	eb6c9d15f381d087
+25	248	7496283114597335	CSCalculator_autogen/mocs_compilation.cpp	eb6c9d15f381d087
+1161	4064	7496280545515538	CMakeFiles/CSCalculator.dir/CSCalculator_autogen/mocs_compilation.cpp.obj	afcd0efb85669112
+1169	4121	7496280545593331	CMakeFiles/CSCalculator.dir/main.cpp.obj	6adea304001b515b
+25	248	7496283114597335	C:/cs10301222/QT/cscalculator/CSCalculator/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CSCalculator_autogen/timestamp	eb6c9d15f381d087
+25	248	7496283114597335	C:/cs10301222/QT/cscalculator/CSCalculator/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CSCalculator_autogen/mocs_compilation.cpp	eb6c9d15f381d087
+250	2852	7496283116838731	CMakeFiles/CSCalculator.dir/mainwindow.cpp.obj	fa1c05b5ceb58f48
+2852	3216	7496283142871164	CSCalculator.exe	e97a0a5448197cd4
+34	259	7496292693485000	CSCalculator_autogen/timestamp	eb6c9d15f381d087
+34	259	7496292693485000	CSCalculator_autogen/mocs_compilation.cpp	eb6c9d15f381d087
+34	259	7496292693485000	C:/cs10301222/QT/cscalculator/CSCalculator/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CSCalculator_autogen/timestamp	eb6c9d15f381d087
+34	259	7496292693485000	C:/cs10301222/QT/cscalculator/CSCalculator/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CSCalculator_autogen/mocs_compilation.cpp	eb6c9d15f381d087
+262	3450	7496292695761097	CMakeFiles/CSCalculator.dir/mainwindow.cpp.obj	fa1c05b5ceb58f48
+3450	3931	7496292727648156	CSCalculator.exe	e97a0a5448197cd4
